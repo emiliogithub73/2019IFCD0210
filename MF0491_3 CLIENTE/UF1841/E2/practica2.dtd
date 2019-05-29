@@ -1,0 +1,16 @@
+<!ELEMENT xs:schema (xs:element+)>
+<!ATTLIST xs:schema
+          elementFormDefault CDATA #REQUIRED>
+<!ELEMENT xs:element (xs:complexType?)>
+<!ATTLIST xs:element
+          maxOccurs CDATA #IMPLIED
+          name CDATA #IMPLIED
+          ref CDATA #IMPLIED
+          type CDATA #IMPLIED>
+<!ELEMENT xs:complexType (xs:sequence, xs:attribute)>
+<!ELEMENT xs:sequence (xs:element+)>
+<!ELEMENT xs:attribute (#PCDATA)>
+<!ATTLIST xs:attribute
+          name CDATA #REQUIRED
+          type CDATA #REQUIRED
+          use CDATA #REQUIRED>
