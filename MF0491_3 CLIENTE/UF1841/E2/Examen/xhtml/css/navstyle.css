@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Fresca|Montserrat|Ubuntu&display=swap');
+
+h1 {
+  font-family: 'Fresca', sans-serif;  
+  color: #FFDCB3;
+  text-align: center;
+  font-size: 400%;
+  letter-spacing: 0.25em;
+  word-spacing: 0.50em;
+}
+
+body {
+  background-color: navy
+}
+
+* {
+  margin:0px;
+  padding:0px;
+}
+
+#header {
+  margin:auto;
+  width:500px;
+  font-family: 'Fresca', sans-serif;  
+}
+
+ul, ol {
+  list-style:none;
+}
+
+.nav {
+  width:600px; /*Le establecemos un ancho*/
+  margin:0 auto; /*Centramos automaticamente*/
+  font-size:2.5em;
+}
+
+.nav > li {
+  float:left;
+}
+
+.nav li a {
+  background-color:navy;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 50px;
+  display:block;
+}
+
+.nav li a:hover {
+  background-color:#434343;
+}
+
+.nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+
+.nav li:hover > ul {
+  display:block;
+}
+
+.nav li ul li {
+  position:relative;
+}
+
+.nav li ul li ul {
+  right:-140px;
+  top:0px;
+}
+
+img {
+  height: 250px;
+}
+
+footer{
+   /* Like the header, the footer will have a static height - it shouldn't grow or shrink.  */
+   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+   color: white;
+}
+      
+    
+
+    
